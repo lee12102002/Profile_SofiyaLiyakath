@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+a
+ {
+    margin-bottom: 20px;
+    width: auto; /* Allow the width to adjust based on content */
+    text-align: center; 
+    position: relative;
+    color: rgb(225, 225, 231);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    width: 20%;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    padding: 10px 30px;
+    flex-direction: column; /* Change to column to make it vertical */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Align items to the left */
+    padding-left: 30px;
+    gap: 50px;
+}
+
+.body > a {
+   /* Center the text horizontally */
+}
+
+
+a:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+a:before {
+    content: ' ';
+    position: absolute;
+    inset: 2px;
+    background: #03040a;
+}
+
+a span {
+    position: relative;
+    z-index: 1;
+}
+
+a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    top: 0;
+    left: 80%;
+    width: 80px;
+    /* background: rgb(106, 115, 116); */
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+a:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+a i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 4px;
+    width: 10px;
+    background: rgb(6, 206, 241);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+   
+}
+
+a:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+@media only screen and (max-width: 768px) {
+    a {
+        padding: 8px 20px; /* Adjust padding for smaller screens */
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+body.family
+{
+    background-image: url('/imagess/flo1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   width: 100%;
+}
+
+
+#linkButton {
+    background: blue; /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Inknut Antiqua', serif;
+}
+
+#linkButton:hover {
+    background-color: darkblue; /* Change background color on hover */
+}
+  
+
+
+.container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+    font-family: 'Inknut Antiqua', serif; /* Set font to Inknut Antiqua */
+    color: rgb(235, 229, 229); /* Set text color */
+    height: 100vh; /* Set container height to full viewport height */
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+}
+
+.container p {
+    font-size: 30px; /* Set font size */
+    background:#252020;
+    margin: 0; /* Remove default margin */
+    width: 50%;
+    font-family: 'Inknut Antiqua', serif;
+     /* Set paragraph width to 100% */
+}
+
+#linkButton {
+    background: blue; /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Inknut Antiqua', serif;
+}
+
+#linkButton:hover {
+    background-color: darkblue; /* Change background color on hover */
+}
+
+
+
+

@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('/imagess/Opening.jpg');
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+.container p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container a img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.container a img, .container a img:hover {
+    border-radius: 50%;
+}
+
+a {
+    margin-bottom: 20px;
+    width: auto;
+    text-align: center;
+    position: relative;
+    color: rgb(225, 225, 231);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    width: 20%;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a span {
+    padding-left: 10px;
+}
+
+a i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 8px solid var(--clr);
+    transition: border-color 0.3s ease;
+}
+
+a:hover i {
+    border-left-color: transparent;
+}
